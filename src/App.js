@@ -30,9 +30,6 @@ function App() {
       <animated.div style={props}>
           Помогите! Я исчезаю
       </animated.div>
-    // <div className="App" style={props} >
-    //   <div className="cercle" style={container}></div>
-    // </div>
   );
 }
 
