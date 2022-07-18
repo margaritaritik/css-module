@@ -22,15 +22,28 @@ function App() {
       justifyContent: 'center'
   }
     const props = useSpring({
-        opacity: 0,
-        from: { opacity: 3 },
+        loop: true,
+        to: [
+            { opacity: 1, color: '#ffaaee' },
+            { opacity: 3, color: 'rgb(14,26,19)' },
+            { opacity: 6, color: 'rgb(82,245,163)' },
+            { opacity: 3, color: 'rgb(255,116,17)' },
+            { opacity: 5, color: 'rgb(10,89,248)' }
+        ],
+        from: { opacity: 3, color: 'red' },
+    });
+
+    const props1 = useSpring({
+        x: 100,
+        from: { x: 0 }
     });
 
   return (
-      <animated.div style={props}>
+      <animated.div style={props} strokeDashoffset={props1.x}>
           Помогите! Я исчезаю
       </animated.div>
   );
+
 }
 
 export default App;
