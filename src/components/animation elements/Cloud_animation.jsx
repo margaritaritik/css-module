@@ -10,6 +10,13 @@ const CloudAnimation = () => {
             <div className={styles_cloud.cloud}></div>
             <div className={styles_cloud.cloud}></div>
             <div className={styles_cloud.cloud}></div>
+            {/*<div className={styles_cloud.cloud}></div>*/}
+            {/*<div className={styles_cloud.cloud}></div>*/}
+            {/*<div className={styles_cloud.cloud}></div>*/}
+            {/*<div className={styles_cloud.cloud}></div>*/}
+            {/*<div className={styles_cloud.cloud}></div>*/}
+            {/*<div className={styles_cloud.cloud}></div>*/}
+
 
 
 
