@@ -9,7 +9,7 @@ import TimeOfDay from "./components/animation time of day/TimeOfDay";
 function App() {
     return (
         <div>
-          <Revert s="привет!"/>
+         <TimeOfDay/>
         </div>
     );
 
