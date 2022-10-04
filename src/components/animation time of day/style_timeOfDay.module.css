@@ -3,51 +3,48 @@
     top: 0;
     left: 0;
     width: 100%;
-    height: 20em;
-    background: blue;
+    height: 300px;
+    /*max-height: 200px;*/
+    /*max-width: 1000px;*/
+    /*height: 20em;*/
+    background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
     overflow: hidden;
+    justify-content: center;
 }
 
 .sunrise{
     position: absolute;
     opacity: 1;
-    left:40%;
-    width: 300px;
-    height: 300px;
+    /*left: 50%;*/
+    /*margin-right: -50%;*/
+    left: calc(50% - 200px);
+    /*margin:auto ;*/
+    width: 100%;
+    max-width: 200px;
+    height: 200px;
     border-radius: 60%;
     background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
     /*box-shadow: ;*/
-    transition: all 2s linear 0s;
+    transition: all 5s linear 0s;
     animation: sunrise_animation 2s;
+    animation-iteration-count: infinite;
     z-index: 2;
 }
- .sunrise::after{
-     content: ' ';
-     position: absolute;
-     opacity: 1;
-     top:15%;
-     left:15%;
-     width: 200px;
-     height: 200px;
-     border-radius: 60%;
-     background: radial-gradient(rgba(255, 145, 0, 0.53), #FFA9A1);
-     box-shadow: inset 0px 0px 40px 40px rgba(201, 24, 8, 0.6);
-     transition: all 2s linear 0s;
-     animation: sunrise_animation 2s;
-     z-index: 1;
- }
+
 
 @keyframes sunrise_animation {
     0%{
-       top: -10%;
-        /*opacity: 0;*/
+        top: 200%;
+        opacity: 0;
     }
     50%{
-        top: 20%;
-        /*opacity:0.9 ;*/
+        opacity: 1;
+    }
+    53%{
+        opacity: 1;
     }
     100%{
-        top:-10%;
+        top:20%;
         /*opacity: 1;*/
     }
 }
