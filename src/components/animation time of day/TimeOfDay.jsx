@@ -5,7 +5,14 @@ const TimeOfDay = () => {
     return (
         <div className={styles.container}>
             <div className={styles.sunrise}>
-
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
             </div>
         </div>
     );

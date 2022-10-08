@@ -18,6 +18,7 @@
     position: absolute;
     opacity: 1;
     /*right: 40%;*/
+    top: 30px;
     left: 50%;
     /*margin-right: -50%;*/
     /*left: calc(50% - 200px);*/
@@ -35,9 +36,52 @@
     background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
     /*box-shadow: ;*/
     transition: all 5s linear 0s;
-    animation: sunrise_animation 2s;
-    animation-iteration-count: infinite;
+    /*animation: sunrise_animation 2s;*/
+    /*animation-iteration-count: infinite;*/
     z-index: 2;
+}
+.sunrise li{
+    list-style-type: none;
+    position: absolute;
+
+    border: 20px solid transparent;
+    border-left: 30px solid #be012d;
+}
+
+.sunrise li:nth-child(1){
+    right: 70%;
+    top: -12%;
+    rotate: 240deg;
+}
+.sunrise li:nth-child(2){
+    right: 10%;
+    top: -14%;
+    rotate: 300deg;
+}
+.sunrise li:nth-child(3){
+    right: 15%; top: 97%;
+    rotate: 70deg;
+}
+.sunrise li:nth-child(4){
+    right: 94%; top: 66%;
+    rotate:155deg;
+}
+.sunrise li:nth-child(5){
+    right: 97%; top: 25%;
+    rotate: 195deg;
+}
+
+.sunrise li:nth-child(7){
+    right: 60%; top: 97%;
+    rotate:109deg;
+}
+.sunrise li:nth-child(8){
+    right: -19%; top: 65%;
+    rotate:24deg;
+}
+.sunrise li:nth-child(6){
+    right: -21%; top: 25%;
+    rotate:-15deg;
 }
 
 
