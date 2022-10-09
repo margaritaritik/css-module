@@ -9,9 +9,10 @@
     /*max-width: 1000px;*/
     /*height: 20em;*/
     background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
-    overflow: hidden;
+    /*overflow: hidden;*/
     justify-content: center;
     text-align: center;
+    /*z-index: 10;*/
 }
 
 .sunrise{
@@ -36,17 +37,24 @@
     background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
     /*box-shadow: ;*/
     transition: all 5s linear 0s;
-    /*animation: sunrise_animation 2s;*/
-    /*animation-iteration-count: infinite;*/
-    z-index: 2;
+    animation: sunrise_animation 2s;
+    animation-iteration-count: infinite;
+    /*z-index: 2;*/
+    z-index: 10;
 }
 .sunrise li{
-    list-style-type: none;
     position: absolute;
+    display: block;
+    list-style-type: none;
 
-    border: 20px solid transparent;
-    border-left: 30px solid #be012d;
+    /*left:;*/
+    border: 18px solid transparent;
+    border-left: 140px solid #be012d;
+    top: 0;
+    margin-right: -25%;
+    z-index: -10;
 }
+
 
 .sunrise li:nth-child(1){
     right: 70%;
@@ -91,13 +99,30 @@
         opacity: 0;
     }
     50%{
-        opacity: 1;
+        opacity: 0.4;
     }
     53%{
-        opacity: 1;
+        opacity: 0.6;
     }
     100%{
         top:20%;
-        /*opacity: 1;*/
+        opacity: 1;
+    }
+}
+
+@keyframes rays_animation {
+    0%{
+        top: 200%;
+        opacity: 0;
+    }
+    50%{
+        opacity: 0.7;
+    }
+    53%{
+        opacity: 0.8;
+    }
+    100%{
+        top:20%;
+        opacity: 1;
     }
 }
