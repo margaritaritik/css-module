@@ -122,6 +122,6 @@
     100%{
         opacity: 1;
         transform:  translate(45px, 20%);
-        transform: rotate(0.5turn);
+        transform: rotate(0.3turn);
     }
 }
