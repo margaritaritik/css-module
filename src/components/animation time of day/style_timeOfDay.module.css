@@ -19,8 +19,8 @@
     max-height: 200px;
     top: 30px;
     left: 50%;
-    transition: all 5s linear 0s;
-    animation: sunrise_animation 2s;
+    transition: all 5s linear 2s;
+    animation: sunrise_animation 10s;
     animation-iteration-count: infinite;
 }
 .sunrise{
@@ -42,7 +42,7 @@
     border-left: 140px solid #be012d;
     top: 0;
     margin-right: -25%;
-    transition: all 5s linear 0s;
+    transition: all 5s linear 2s;
     animation: rays_animation 6s;
     animation-iteration-count: infinite;
 
@@ -106,7 +106,6 @@
 
 @keyframes rays_animation {
     0%{
-        /*top: 200%;*/
         opacity: 0;
     }
     50%{
@@ -119,7 +118,8 @@
         opacity: 0.6;
     }
     100%{
-        /*top:20%;*/
         opacity: 1;
+        transform:  translate(45px, 20%);
+        transform: rotate(0.5turn);
     }
 }
