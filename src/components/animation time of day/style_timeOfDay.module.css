@@ -2,8 +2,8 @@
     position: relative;
     top: 0;
     left: 0;
-    width: 800px;
-    height: 300px;
+    width:100%;
+    height: 600px;
     background: radial-gradient(#e3a302, rgba(201, 24, 8, 0.62));
     overflow: hidden;
     justify-content: center;
@@ -20,9 +20,9 @@
     top: 30px;
     left: 50%;
     transition: all 5s linear 2s;
-    animation: sunrise_animation 10s;
-    animation-direction: alternate-reverse;
-    animation-iteration-count: infinite;
+    /*animation: sunrise_animation 10s;*/
+    /*animation-direction: alternate-reverse;*/
+    /*animation-iteration-count: infinite;*/
 }
 .sunrise{
     position: absolute;
@@ -49,8 +49,6 @@
     animation-iteration-count: infinite;
 
 }
-
-
 
 .suncontainer li:nth-child(9){
     right: 70%;
@@ -108,20 +106,20 @@
 
 @keyframes rays_animation {
     0%{
-        opacity: 0;
+        /*opacity: 0;*/
     }
     50%{
-        opacity: 0.1;
+        /*opacity: 0.1;*/
     }
     53%{
-        opacity: 0.5;
+        /*opacity: 0.5;*/
     }
     80%{
-        opacity: 0.6;
+        /*opacity: 0.6;*/
     }
     100%{
-        opacity: 1;
-        transform:  translate(45px, 20%);
-        transform: rotate(0.3turn);
+        /*opacity: 1;*/
+        transform:  translate(5px, 10%);
+        transform: rotate(0.1turn);
     }
 }
