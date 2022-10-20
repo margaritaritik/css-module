@@ -107,6 +107,7 @@
 @keyframes rays_animation {
     0%{
         /*opacity: 0;*/
+        transform: rotate(-20deg);
     }
     50%{
         /*opacity: 0.1;*/
@@ -119,7 +120,7 @@
     }
     100%{
         /*opacity: 1;*/
-        transform:  translate(5px, 10%);
-        transform: rotate(0.1turn);
+        transform:  translate(5px, 50%);
+        transform: rotate(20deg);
     }
 }
