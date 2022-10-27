@@ -11,7 +11,16 @@
     max-width: 200px;
     max-height: 200px;
     border-radius: 60%;
+    border-width: 0;
     background: linear-gradient(to bottom right, #293c5d, #000226);;
-    box-shadow:  0 0 0 0.8em #0f0c73, 0 0 0 0.1em #01212c;
+    /*box-shadow:  0 0 0 0.2em #000226, 0 0 0 0.5em #268eb2;*/
     z-index: 10;
+}
+ li{
+     display: block;
+     list-style-type: none;
+ }
+
+.spot{
+
 }

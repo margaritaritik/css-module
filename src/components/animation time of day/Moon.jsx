@@ -5,6 +5,7 @@ const Moon = () => {
     return (
         <div className={styles.container}>
             <div className={styles.container_moon}>
+                <li className={styles.spot}></li>
 
             </div>
         </div>
