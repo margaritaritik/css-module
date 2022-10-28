@@ -6,13 +6,10 @@ const Moon = () => {
         // 👇️ get number between min (inclusive) and max (inclusive)
         return `${Math.floor(Math.random() * (100 - 0 + 1)) + 0}%`;
     }
-
-console.log(randomNumberInRange());
-
     return (
         <div className={styles.container}>
             <div className={styles.stars}>
-                <span style = {{left:randomNumberInRange(),top:randomNumberInRange()}}></span>
+
                 <span style = {{left:randomNumberInRange(),top:randomNumberInRange()}}></span>
                 <span style = {{left:randomNumberInRange(),top:randomNumberInRange()}}></span>
                 <span style = {{left:randomNumberInRange(),top:randomNumberInRange()}}></span>
