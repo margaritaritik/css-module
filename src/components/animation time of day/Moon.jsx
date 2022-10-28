@@ -8,6 +8,7 @@ const Moon = () => {
                 <li className={styles.spot}></li>
                 <li className={styles.spot}></li>
                 <li className={styles.spot}></li>
+                <li className={styles.spot}></li>
 
             </div>
         </div>
