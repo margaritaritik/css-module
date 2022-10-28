@@ -1,9 +1,11 @@
 .container{
-    padding: 20px;
+    position: relative;
+    /*padding: 20px;*/
     margin: 0;
     width: 900px;
     height: 400px;
     background: black;
+    overflow: hidden;
 
 
 }
@@ -75,16 +77,32 @@
 
 
 /*//////////STARTS///////////////*/
+
 .stars{
-    position: absolute;/*абсолютное позиционирование*/
-    /*top: 10%;*/
-    /*left: 10%;*/
+    position: absolute;
     width: 100%;
     height: 100%;
-    /*background: url(bg2.jpg);!*фоновая картинка*!*/
-    /*background-size: cover;!*растянуть на весь экран сохраняя пропорции*!*/
-    /*background-position-x: center;!*позиция картинки по горизонтали в центре*!*/
-    animation: animateBg 50s linear infinite;/*свойства анимации*/
+    /*animation: animateBg 50s linear infinite;*/
+}
+
+.stars span{
+    position: absolute;
+    width: 4px;/*ширина звезды*/
+    height: 4px;/*высота звезды*/
+    background: #fff;/*цвет звезды*/
+    border-radius: 50%;/*закоугление углов*/
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+    0 0 0 8px rgba(255,255,255,.1),
+    0 0 20px rgba(255,255,255,1);
+}
+
+
+
+.starfall{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    animation: animateBg 50s linear infinite;
 }
 
 @keyframes animateBg{
@@ -98,18 +116,18 @@
     }
 }
 
-span{
+.starfall span{
     position: absolute;
     width: 4px;/*ширина звезды*/
     height: 4px;/*высота звезды*/
     background: #fff;/*цвет звезды*/
     border-radius: 50%;/*закоугление углов*/
-    box-shadow: 0 0 0 4px rgb(255, 255, 255),
-    0 0 0 8px rgba(255, 255, 255, 0.84),
+    box-shadow: 0 0 0 4px rgba(255,255,255,.1),
+    0 0 0 8px rgba(255,255,255,.1),
     0 0 20px rgba(255,255,255,1);
     animation: animate 3s linear infinite;
 }
-span:before{
+.starfall span:before{
     content: '';
     position: absolute;
     top: 50%;
