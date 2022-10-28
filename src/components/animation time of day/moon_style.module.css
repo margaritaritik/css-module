@@ -9,8 +9,8 @@
 }
 .container_moon{
     position: relative;
-    top: 0;
-    left: 0;
+    top: 20%;
+    left: 50%;
     opacity: 1;
     width: 100%;
     height: 100%;
@@ -71,4 +71,114 @@
     background: radial-gradient( rgba(193, 199, 206, 0.75), rgba(209, 210, 222, 0.89));
     clip-path: polygon(44% 77%, 86% 85%, 94% 51%, 64% 95%, 28% 87%, 59% 71%, 62% 18%, 75% 28%, 7% 20%, 28% 11%);
 
+}
+
+
+/*//////////STARTS///////////////*/
+.stars{
+    position: absolute;/*абсолютное позиционирование*/
+    /*top: 10%;*/
+    /*left: 10%;*/
+    width: 100%;
+    height: 100%;
+    /*background: url(bg2.jpg);!*фоновая картинка*!*/
+    /*background-size: cover;!*растянуть на весь экран сохраняя пропорции*!*/
+    /*background-position-x: center;!*позиция картинки по горизонтали в центре*!*/
+    animation: animateBg 50s linear infinite;/*свойства анимации*/
+}
+
+@keyframes animateBg{
+    0%,100%
+    {
+        transform: scale(1);
+    }
+    50%
+    {
+        transform: scale(1.2);
+    }
+}
+
+span{
+    position: absolute;
+    width: 4px;/*ширина звезды*/
+    height: 4px;/*высота звезды*/
+    background: #fff;/*цвет звезды*/
+    border-radius: 50%;/*закоугление углов*/
+    box-shadow: 0 0 0 4px rgb(255, 255, 255),
+    0 0 0 8px rgba(255, 255, 255, 0.84),
+    0 0 20px rgba(255,255,255,1);
+    animation: animate 3s linear infinite;
+}
+span:before{
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 300px;
+    height: 1px;
+    background: linear-gradient(90deg,#fff,transparent);
+}
+@keyframes animate{
+    0%
+    {
+        transform: rotate(-45deg) translateX(0);
+    }
+    70%
+    {
+        opacity: 1;
+    }
+    100%
+    {
+        transform: rotate(-45deg) translateX(-1000px);
+        opacity: 0;
+    }
+}
+
+span:nth-child(1){
+    top: 0px;/*верхняя координата*/
+    right: 0px;/*правая координата*/
+    animation-delay: 0;/*задержка анимации*/
+    animation-duration: 1s;/*длительность анимации*/
+}
+span:nth-child(2){
+    top: 0px;
+    right: 80px;
+    animation-delay: 0.2s;
+    animation-duration: 3s;
+}
+span:nth-child(3){
+    top: 80px;
+    right: 0px;
+    animation-delay: 0.4s;
+    animation-duration: 2s;
+}
+span:nth-child(4){
+    top: 0px;
+    right: 180px;
+    animation-delay: 0.6s;
+    animation-duration: 1.5s;
+}
+span:nth-child(5){
+    top: 0px;
+    right: 400px;
+    animation-delay: 0.8s;
+    animation-duration: 2.5s;
+}
+span:nth-child(6){
+    top: 0px;
+    right: 600px;
+    animation-delay: 1s;
+    animation-duration: 3s;
+}
+span:nth-child(7){
+    top: 300px;
+    right: 0px;
+    animation-delay: 1.2s;
+    animation-duration: 1.75s;
+}
+span:nth-child(8){
+    top: 0px;
+    right: 700px;
+    animation-delay: 1.4s;
+    animation-duration: 1.25s;
 }
