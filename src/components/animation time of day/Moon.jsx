@@ -3,7 +3,6 @@ import styles from './moon_style.module.css';
 
 const Moon = () => {
     function randomNumberInRange() {
-        // 👇️ get number between min (inclusive) and max (inclusive)
         return `${Math.floor(Math.random() * (100 - 0 + 1)) + 0}%`;
     }
     return (
@@ -36,13 +35,13 @@ const Moon = () => {
                 <span></span>
                 <span></span>
             </div>
-            <div className={styles.container_moon}>
-                <li className={styles.spot}></li>
-                <li className={styles.spot}></li>
-                <li className={styles.spot}></li>
-                <li className={styles.spot}></li>
+            {/*<div className={styles.container_moon}>*/}
+            {/*    <li className={styles.spot}></li>*/}
+            {/*    <li className={styles.spot}></li>*/}
+            {/*    <li className={styles.spot}></li>*/}
+            {/*    <li className={styles.spot}></li>*/}
 
-            </div>
+            {/*</div>*/}
         </div>
     );
 };

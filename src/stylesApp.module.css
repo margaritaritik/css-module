@@ -1,0 +1,16 @@
+.containerApp{
+    width: 100%;
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+
+}
+
+.item{
+    width: 70%;
+    height: 300px;
+    margin: 10px auto;
+    box-shadow: 2px 4px 41px 0px rgba(34, 60, 80, 0.2);
+    border-radius: 20px;
+    overflow: hidden;
+}

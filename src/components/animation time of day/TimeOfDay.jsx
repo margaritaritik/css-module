@@ -15,9 +15,6 @@ const TimeOfDay = () => {
                 <li className={styles.rise}></li>
                 <li className={styles.rise}></li>
             </div>
-
-
-
         </div>
     );
 };

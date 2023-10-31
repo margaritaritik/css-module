@@ -1,13 +1,10 @@
 .container{
     position: relative;
-    /*padding: 20px;*/
     margin: 0;
-    width: 900px;
-    height: 400px;
-    background: black;
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(0deg, rgba(0,1,120,1) 36%, rgba(2,0,77,1) 100%);
     overflow: hidden;
-
-
 }
 .container_moon{
     position: relative;
@@ -21,9 +18,8 @@
     border-radius: 60%;
     border-width: 0;
     background: radial-gradient( rgb(186, 192, 197), #ffffff);
-    /*box-shadow:  0 0 0 0.2em #000226, 0 0 0 0.5em #268eb2;*/
     z-index: 10;
-    box-shadow: 2px 2px 30px 10px #b9b9da;
+    box-shadow: 2px 2px 30px 10px #a1a1e7;
 }
  li{
      display: block;
@@ -82,21 +78,18 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    /*animation: animateBg 50s linear infinite;*/
 }
 
 .stars span{
     position: absolute;
-    width: 4px;/*ширина звезды*/
-    height: 4px;/*высота звезды*/
-    background: #fff;/*цвет звезды*/
-    border-radius: 50%;/*закоугление углов*/
+    width: 4px;
+    height: 4px;
+    background: #fff;
+    border-radius: 50%;
     box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.21),
     0 0 0 8px rgba(255,255,255,.1),
     0 0 20px rgba(255,255,255,1);
 }
-
-
 
 .starfall{
     position: absolute;
@@ -153,10 +146,10 @@
 }
 
 span:nth-child(1){
-    top: 0px;/*верхняя координата*/
-    right: 0px;/*правая координата*/
-    animation-delay: 0;/*задержка анимации*/
-    animation-duration: 1s;/*длительность анимации*/
+    top: 0px;
+    right: 0px;
+    animation-delay: 0s;
+    animation-duration: 1s;
 }
 span:nth-child(2){
     top: 0px;
