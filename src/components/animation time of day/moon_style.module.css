@@ -21,10 +21,10 @@
     z-index: 10;
     box-shadow: 2px 2px 30px 10px #a1a1e7;
 }
- li{
-     display: block;
-     list-style-type: none;
- }
+li{
+    display: block;
+    list-style-type: none;
+}
 
 .container li:nth-child(1){
     position: absolute;
