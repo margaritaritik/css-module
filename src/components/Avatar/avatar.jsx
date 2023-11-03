@@ -4,8 +4,8 @@ import ava from './ava.jpg'
 
 const Avatar = () => {
     return (
-        <div>
-            <img style={{width:'50%',height:'50%'}}  className={styles.ava} src={ava} alt="ava" />
+        <div className={styles.container}>
+            <img style={{width:'30%',height:'30%'}}  className={styles.ava} src={ava} alt="ava" />
         </div>
     );
 };

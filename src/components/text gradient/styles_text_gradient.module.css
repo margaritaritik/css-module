@@ -1,0 +1,33 @@
+.gradient{
+    background: linear-gradient(
+    to right,
+    rgba(9, 2, 227, 0.68) 40%,
+    #00ffff 50%,
+    #0020f0 70%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 4em;
+    animation: flow 2s linear infinite;
+}
+@keyframes flow {
+    to{background-position: 200% center}
+
+}
+
+.gradient_metal{
+    background: linear-gradient(
+            to right,
+            rgba(66, 66, 77, 0.68) 40%,
+            #f3ffff 50%,
+            #434449 70%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: bolder;
+    font-size: 4em;
+    animation: flow 2s linear infinite;
+}
