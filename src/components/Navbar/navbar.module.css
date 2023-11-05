@@ -1,9 +1,6 @@
 .header {
 
     background-color: #ffffff;
-    /*left: 0;*/
-    /*top: 0;*/
-    /*position: fixed;*/
     width: 100%;
 }
 .logo{
@@ -16,14 +13,8 @@
 .box {
     height: 80px;
     display: flex;
-    justify-content: space-between;
-    border-bottom: 1px solid gray;
-}
+    justify-content: flex-end;
 
-.logo_image {
-    /*display: flex;*/
-    /*align-items: center;*/
-    /*gap: 10px;*/
 }
 
 .menu {
@@ -32,6 +23,7 @@
     font-size: 22px;
     line-height: 28px;
     gap: 30px;
+    padding: 0;
 }
 
 .mobile_btn {
@@ -78,7 +70,8 @@
 }
 
 a {
-    color: #341c1c;
+
+    color: rgb(161 184 186);
     padding: 1em 1.5em;
     position: relative;
     text-decoration: none;
@@ -86,8 +79,24 @@ a {
 }
 
 a:hover {
-    color: black;
+    background: linear-gradient(
+            to right,
+            rgba(57, 130, 203, 0.64) 30%,
+            rgba(90, 88, 115, 0.64) 45%,
+            rgb(170, 196, 250) 50%,
+            rgb(96, 120, 175) 55%,
+            rgb(95, 109, 150) 60%,
+            rgb(96, 147, 175) 65%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: flow 5s linear infinite;
     cursor: pointer;
+}
+@keyframes flow {
+    to{background-position: 200% center}
+
 }
 
 a:active {
