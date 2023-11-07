@@ -15,3 +15,17 @@
     border-right: 1px solid #64687ffc;
     box-shadow: 0 0 20px 5px #fff, -50px -20px 80px -5px #fff, 0 0 521px 104px rgba(224,223,227,0.9);
 }
+
+
+.m2{
+    width: 100px;
+    position: relative;
+    height: 33px;
+    z-index: 1000;
+    top: 66%;
+    left: 16%;
+    border-radius: 28px;
+    background: #f0f8ffab;
+    /* box-shadow: inset 0px 0px 40px 40px #ffffff; */
+    box-shadow: 0 0 20px 5px #ffffff66, -68px -20px 80px -5px #f0f8ffab, 0 0 678px 118px #f0f8ffab;
+}

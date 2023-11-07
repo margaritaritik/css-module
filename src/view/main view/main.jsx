@@ -10,7 +10,17 @@ const Main = () => {
             <div className={styles.container}>
                 <Avatar/>
                 <div className={styles.container_info}>
-                    infa
+                    <div className={styles.info}>
+                        <h1>Name</h1>
+                        <p>20.02.2023</p>
+                        <p>junior frontend developer</p>
+                        <p>Навыки:</p>
+                        <ul>
+                            <li>HTML, CSS, JS, TS</li>
+                            <li>C#, C++, C, Java</li>
+                            <li>Figma, Photoshop</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </>

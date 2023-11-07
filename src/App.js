@@ -4,6 +4,7 @@ import AnimationView from "./view/animation view/animation";
 import Verstka from "./view/verstka view/verstka";
 import UxUi from "./view/ux ui view/ux_ui";
 import Main from "./view/main view/main";
+import Layout from "./layout/layout";
 
 
 const Path_View = () => {
@@ -11,7 +12,9 @@ const Path_View = () => {
         { path: "/", element: <Main /> },
         { path: "animatsii", element: <AnimationView /> },
         { path: "verstka", element: <Verstka />},
-        { path: "ux-ui", element: <UxUi /> }
+        { path: "ux-ui", element: <UxUi /> },
+        {path:"layout",element: <Layout/>},
+        {path:"index.html",element: <Layout/>}
 
     ]);
     return routes;
