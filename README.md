@@ -1,2 +1,2 @@
 # css-module
-css module with react-spring. CSS modules are located in this repository
+Визуальные эффекты на CSS JS HTML
